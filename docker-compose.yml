@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  service:
+
+      build: .
+      volumes:
+              - ./:/var/task
+      expose:
+              - 8000
+      ports:
+              - 8000:8000
+      command: bash -ic  "pip install -r requirements.txt && jupyter-notebook --ip 0.0.0.0 --port 8000 --allow-root"
+      tty: true

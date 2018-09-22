@@ -1,0 +1,8 @@
+.idea/
+env/
+env_*/
+*.pyc
+__pycache__/
+credentials.json
+clustercache/
+.ipynb_checkpoints/
